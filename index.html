@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Karthikbt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="images/navprofile.jpeg" class="cover" alt="banner">
+        </div>
+        <div class="navlink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="cv.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="contact.html" class="btn" target="blank">Hire Me</a>
+        </header>
+
+        <div class="imgbx">
+            <img src="/images/homeprofile.png" class="cover" alt="boy">
+        </div>
+        <div class="content">
+            <h2>Hi, I am <br><span class="typing-text"></span></h2>
+            <p>Pursued BE in BMS College of Engineering and am Intended to build a career with leading corporate of hi-tech environment with committed and dedicated people and exercise my managerial and technical skills in a challenging and creative working
+                environment so as to contribute positively towards achieving goals of my working company thus leading to my professional and personal development.
+            </p>
+            <a href="cv.html" class="btn">Download My CV</a>
+
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/karthikbt.rishi/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/karthik_bt"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/c/Karthikdiscoveries/featured"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            <p class="copyright">
+                © 2021 Karthik Discoveries
+            </p>
+        </footer>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script>
+        var type = new Typed('.typing-text', {
+            strings: ['Karthik B T'],
+            typeSpeed: 120,
+            loop: true
+        });
+
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+
+
+        menuToggle.onclick = function() {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+
+        }
+    </script>
+</body>
+
+</html>
